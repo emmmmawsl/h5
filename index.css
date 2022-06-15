@@ -1,0 +1,38 @@
+:root {
+  --wght: 300;
+  --wdth: 62.5;
+  --GRAD: 230;
+  --YOPQ: 80;
+  --YTUC: 550;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fffe;
+  background-color: #0f172e;
+  opacity: 0.8;
+  background-image:  linear-gradient(#131e3c 1px, transparent 1px), linear-gradient(to right, #131e3c 1px, #0f172e 1px);
+  background-size: 20px 20px;
+  font-family: 'Roboto Flex', sans-serif;
+  transform: scale(0.25);
+
+  .text-content {
+    display: flex;
+    transform: translateY(-150px);
+    font-size: 8rem;
+
+    & > * {
+      text-align: center;
+      width: 160px;
+      flex: 1;
+      font-variation-settings: 'wght' var(--wght), 'wdth' var(--wdth), 'GRAD' var(--GRAD), 'YOPQ' var(--YOPQ), 'YTUC' var(--YTUC);
+    }
+  }
+}
