@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>404 NOT FOUND</title>
+	<link rel="stylesheet" href="index.css">
+	<script>  
+        function a(){  
+            alert("姿势检查完毕，您未在月球向北纬 34°32′27.00″ 东经 108°55′25.00″ 访问，所以您无法访问此页面！");  
+        }
+        function b(){
+            window.location.reload()
+        };  
+    </script>
+</head>
+
+<body>
+
+	<div class="index">
+		<div class="index-content">
+			<div class="icon"></div>
+			<div class="index-message">
+				<h1 class="message-title">无法访问此页面</h1>
+				<p class="message-content">你访问的姿势不正确。</p>
+				<div class="index-info">
+					<p class="message-content"><a class="message-link" onclick="a();">尝试运行姿势检测</a>。</p>
+					<p class="message-content error-code">ERR_WRONG_POSTURE</p>
+				</div>
+			</div>
+
+			<div class="index-buttons">
+				<div class="buttons">
+					<button onclick="b();">重新加载</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
